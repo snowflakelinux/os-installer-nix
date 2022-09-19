@@ -10,7 +10,7 @@
       url = "git+https://gitlab.gnome.org/p3732/os-installer";
       flake = false;
     };
-    os-installer-snowflake-config.url = "path:/home/victor/Documents/snowflake/os-installer-snowflake-config";
+    os-installer-snowflake-config.url = "github:snowflakelinux/os-installer-snowflake-config";
   };
 
   outputs = { self, nixpkgs, utils, vte-src, os-installer-src, os-installer-snowflake-config }@inputs:

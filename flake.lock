@@ -38,14 +38,17 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1663572878,
-        "narHash": "sha256-j1XthE9S8TYDB2OO7uHSCQkdxE3GQGO1I8yD1NtENUE=",
-        "path": "/home/victor/Documents/snowflake/os-installer-snowflake-config",
-        "type": "path"
+        "lastModified": 1663598820,
+        "narHash": "sha256-Uwee0xnN+KVhI/C8rAhxGnA6hgmr5MeeqE77qywVYS4=",
+        "owner": "snowflakelinux",
+        "repo": "os-installer-snowflake-config",
+        "rev": "0e1ecab4fab8a438ccaeaa82cbfce54295b7830f",
+        "type": "github"
       },
       "original": {
-        "path": "/home/victor/Documents/snowflake/os-installer-snowflake-config",
-        "type": "path"
+        "owner": "snowflakelinux",
+        "repo": "os-installer-snowflake-config",
+        "type": "github"
       }
     },
     "os-installer-src": {
