@@ -38,11 +38,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1663622256,
-        "narHash": "sha256-ZMYSV6cr1YmygW0D4uONkD3pmR45dPmQgwcq2qGzASM=",
+        "lastModified": 1663626677,
+        "narHash": "sha256-gUNLanPx5g38J98jLKOGEwZ21Z7X2cduunXeDrVm0n4=",
         "owner": "snowflakelinux",
         "repo": "os-installer-snowflake-config",
-        "rev": "21101208e2bc281b9d9405a954e3233cafb638ab",
+        "rev": "f86351a2678aba499d6429b07766f2ac617287ef",
         "type": "github"
       },
       "original": {
