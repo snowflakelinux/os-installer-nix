@@ -11,6 +11,7 @@
       flake = false;
     };
     os-installer-snowflake-config.url = "github:snowflakelinux/os-installer-snowflake-config";
+    os-installer-snowflake-config.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, utils, vte-src, os-installer-src, os-installer-snowflake-config }@inputs:
@@ -20,13 +21,13 @@
           inherit system;
         };
         libadwaita-git = pkgs.libadwaita.overrideAttrs (oldAttrs: rec {
-          version = "1.2.rc";
+          version = "1.2.0";
           src = pkgs.fetchFromGitLab {
             domain = "gitlab.gnome.org";
             owner = "GNOME";
             repo = "libadwaita";
             rev = version;
-            hash = "sha256-p7nsaAqrzQKeUiu7aGlgoKu0AH9KV/sMsVcLLpgl4Lo=";
+            hash = "sha256-3lH7Vi9M8k+GSrCpvruRpLrIpMoOakKbcJlaAc/FK+U=";
           };
         });
         vte-gtk4 = pkgs.callPackage ./vte-gtk4.nix {
@@ -39,13 +40,11 @@
       in
       rec
       {
-
-        
-
         packages.${name} = pkgs.callPackage ./default.nix {
          inherit (inputs) os-installer-src;
          vte-gtk4 = vte-gtk4;
          os-installer-snowflake-config = os-installer-snowflake-config-pkg;
+         libadwaita-git = libadwaita-git;
         };
 
         # `nix build`
@@ -71,7 +70,6 @@
             gobject-introspection
             graphene
             gtk4
-            gtksourceview5
             libadwaita-git
             meson
             ninja

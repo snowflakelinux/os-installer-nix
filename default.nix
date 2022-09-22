@@ -4,6 +4,7 @@
 , vte-gtk4
 , os-installer-src
 , os-installer-snowflake-config ? null
+, libadwaita-git ? pkgs.libadwaita
 }:
 
 python3.pkgs.buildPythonApplication rec {
@@ -33,7 +34,7 @@ python3.pkgs.buildPythonApplication rec {
     gnome.gnome-control-center
     gnome.gnome-disk-utility
     gtk4
-    libadwaita
+    libadwaita-git
     libgweather
     libxml2
     udisks

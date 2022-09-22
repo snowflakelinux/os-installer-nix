@@ -26,7 +26,7 @@
   systemd,
   systemdSupport ? stdenv.hostPlatform.isLinux,
   nixosTests,
-  vte-src ? null,
+  vte-src,
 }:
 stdenv.mkDerivation rec {
   pname = "vte";
@@ -34,17 +34,7 @@ stdenv.mkDerivation rec {
 
   outputs = ["out" "dev"];
 
-  src =
-    if vte-src != null
-    then vte-src
-    else
-      fetchFromGitLab {
-        domain = "gitlab.gnome.org";
-        owner = "gnome";
-        repo = "vte";
-        rev = "1398ac862fb10b3cb7cdfc8267be2df5d5f39eb5";
-        sha256 = "sha256-hFCHlbKDNpFTk2CzXjvshXwf7pmjGzwVfufhb8GTZKA=";
-      };
+  src = vte-src;
 
   patches = [
     # VTE needs a small patch to work with musl:
@@ -113,22 +103,5 @@ stdenv.mkDerivation rec {
     tests = {
       inherit (nixosTests.terminal-emulators) gnome-terminal lxterminal mlterm roxterm sakura stupidterm terminator termite xfce4-terminal;
     };
-  };
-
-  meta = with lib; {
-    broken = stdenv.isDarwin;
-    homepage = "https://www.gnome.org/";
-    description = "A library implementing a terminal emulator widget for GTK";
-    longDescription = ''
-      VTE is a library (libvte) implementing a terminal emulator widget for
-      GTK, and a minimal sample application (vte) using that.  Vte is
-      mainly used in gnome-terminal, but can also be used to embed a
-      console/terminal in games, editors, IDEs, etc. VTE supports Unicode and
-      character set conversion, as well as emulating any terminal known to
-      the system's terminfo database.
-    '';
-    license = licenses.lgpl3Plus;
-    maintainers = with maintainers; [astsmtl antono] ++ teams.gnome.members;
-    platforms = platforms.unix;
   };
 }
