@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1664106353,
-        "narHash": "sha256-HMJP80+DSxFySpWyuxz5+iNozS3+dVt0b4n6YMIU5/8=",
+        "lastModified": 1664195620,
+        "narHash": "sha256-/0V1a1gAR+QbiQe4aCxBoivhkxss0xyt2mBD6yDrgjw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "79d3ca08920364759c63fd3eb562e99c0c17044a",
+        "rev": "62228ccc672ed000f35b1e5c82e4183e46767e52",
         "type": "github"
       },
       "original": {
@@ -24,11 +24,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1664247525,
-        "narHash": "sha256-yDcR+y3U0b/lw9OnjPKBeBqp5+74LTOWQL93SeyMKvg=",
+        "lastModified": 1664301284,
+        "narHash": "sha256-HeupaPwA5RKLnT4DNJpgXoGMrE+lu+z0fLvArSZuTLc=",
         "owner": "snowflakelinux",
         "repo": "os-installer-snowflake-config",
-        "rev": "818fc3924b574c43248ad90925da303bf1231114",
+        "rev": "5a96f735fb609dbaef4a73fcafcca83c356e98dd",
         "type": "github"
       },
       "original": {
@@ -40,11 +40,11 @@
     "os-installer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1664058278,
-        "narHash": "sha256-Xq3V1xZi83OPa6UGO+gkyYHDNztJkWFaXoZpH2csIk4=",
+        "lastModified": 1664272762,
+        "narHash": "sha256-xVUxdYlY02+5b/o9hkkHCbvqxBamWOXU2zN1eUVS/Js=",
         "ref": "refs/heads/main",
-        "rev": "7d5c343d16162f254de962abc942f080f888a122",
-        "revCount": 629,
+        "rev": "915e67c5ca2c4c0c70a9f6a2831d1caaa2fb2e61",
+        "revCount": 642,
         "type": "git",
         "url": "https://gitlab.gnome.org/p3732/os-installer"
       },
