@@ -51,9 +51,9 @@ python3.pkgs.buildPythonApplication rec {
 
   postPatch = ''
     substituteInPlace data/com.github.p3732.OS-Installer.desktop.in \
-      --replace "OS-Installer" "Install SnowflakeOS"
+      --replace "Name=OS-Installer" "Name=Install SnowflakeOS"
     substituteInPlace data/com.github.p3732.OS-Installer.desktop.in \
-      --replace "Install an Operating System" "Install the SnowflakeOS Operating System"
+      --replace "Comment=Install an Operating System" "Comment=Install the SnowflakeOS Operating System"
     substituteInPlace meson.build \
       --replace "meson.add_install_script('.build_files/postinstall.py')" ""
     substituteInPlace src/util/system_calls.py \
