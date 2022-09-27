@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1663494472,
-        "narHash": "sha256-fSowlaoXXWcAM8m9wA6u+eTJJtvruYHMA+Lb/tFi/qM=",
+        "lastModified": 1664106353,
+        "narHash": "sha256-HMJP80+DSxFySpWyuxz5+iNozS3+dVt0b4n6YMIU5/8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f677051b8dc0b5e2a9348941c99eea8c4b0ff28f",
+        "rev": "79d3ca08920364759c63fd3eb562e99c0c17044a",
         "type": "github"
       },
       "original": {
@@ -24,11 +24,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1663735927,
-        "narHash": "sha256-OL6yYafpYcCRJ1lGUsmu+VlpRd+khwIKJFcgVPHyPig=",
+        "lastModified": 1664247525,
+        "narHash": "sha256-yDcR+y3U0b/lw9OnjPKBeBqp5+74LTOWQL93SeyMKvg=",
         "owner": "snowflakelinux",
         "repo": "os-installer-snowflake-config",
-        "rev": "4cdc904d44c2b14d49564317be89e202c49b6b91",
+        "rev": "818fc3924b574c43248ad90925da303bf1231114",
         "type": "github"
       },
       "original": {
@@ -40,11 +40,11 @@
     "os-installer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1663809941,
-        "narHash": "sha256-qyHGBn1zIMpnId6BbsQUKlGUmHYjJK6YNmxgjb09A+4=",
+        "lastModified": 1664058278,
+        "narHash": "sha256-Xq3V1xZi83OPa6UGO+gkyYHDNztJkWFaXoZpH2csIk4=",
         "ref": "refs/heads/main",
-        "rev": "d2908c4377c944b6bb31bf7a8ec4459fcafb7a38",
-        "revCount": 623,
+        "rev": "7d5c343d16162f254de962abc942f080f888a122",
+        "revCount": 629,
         "type": "git",
         "url": "https://gitlab.gnome.org/p3732/os-installer"
       },
@@ -95,11 +95,11 @@
     "vte-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1663791233,
-        "narHash": "sha256-quS01ljUZy/4ws2dSlaawxIiD+WtrZoTrAY2l+fsLiM=",
+        "lastModified": 1663943097,
+        "narHash": "sha256-5uVPGjfjNGaLGhkzcMkSYsoTCaCETdJcEv3yerOJork=",
         "ref": "master",
-        "rev": "c735479b7542b938bfb9709860fff58c5ca9fe6f",
-        "revCount": 5220,
+        "rev": "8ef3f6b2f8043d28cbc82520eb094f09333b26ae",
+        "revCount": 5222,
         "type": "git",
         "url": "https://gitlab.gnome.org/gnome/vte"
       },

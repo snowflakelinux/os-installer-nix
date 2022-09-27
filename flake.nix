@@ -42,9 +42,9 @@
       {
         packages.${name} = pkgs.callPackage ./default.nix {
          inherit (inputs) os-installer-src;
-         vte-gtk4 = vte-gtk4;
-         os-installer-snowflake-config = os-installer-snowflake-config-pkg;
-         libadwaita-git = libadwaita-git;
+         inherit vte-gtk4;
+         inherit libadwaita-git;
+         os-installer-config = os-installer-snowflake-config-pkg;
         };
 
         # `nix build`

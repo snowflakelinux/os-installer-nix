@@ -3,7 +3,7 @@
 , python3 ? pkgs.python3
 , vte-gtk4
 , os-installer-src
-, os-installer-snowflake-config ? null
+, os-installer-config ? null
 , libadwaita-git ? pkgs.libadwaita
 }:
 
@@ -39,7 +39,7 @@ python3.pkgs.buildPythonApplication rec {
     libxml2
     udisks
     vte-gtk4
-    os-installer-snowflake-config
+    os-installer-config
   ];
 
   propagatedBuildInputs = with python3.pkgs; [
@@ -50,6 +50,10 @@ python3.pkgs.buildPythonApplication rec {
   strictDeps = false;
 
   postPatch = ''
+    substituteInPlace data/com.github.p3732.OS-Installer.desktop.in \
+      --replace "OS-Installer" "Install SnowflakeOS"
+    substituteInPlace data/com.github.p3732.OS-Installer.desktop.in \
+      --replace "Install an Operating System" "Install the SnowflakeOS Operating System"
     substituteInPlace meson.build \
       --replace "meson.add_install_script('.build_files/postinstall.py')" ""
     substituteInPlace src/util/system_calls.py \
@@ -58,11 +62,11 @@ python3.pkgs.buildPythonApplication rec {
       --replace "    _exec(['timedatectl', '--no-ask-password', 'set-timezone', timezone])" ""
     substituteInPlace src/util/system_calls.py \
       --replace "    _exec(['timedatectl', '--no-ask-password', 'set-ntp', 'true'])" ""
-  '' + lib.optionalString (os-installer-snowflake-config != null) ''
+  '' + lib.optionalString (os-installer-config != null) ''
     substituteInPlace src/config.py \
-      --replace "/etc/os-installer/config.yaml" "${os-installer-snowflake-config}/etc/os-installer/config.yaml"
+      --replace "/etc/os-installer/config.yaml" "${os-installer-config}/etc/os-installer/config.yaml"
     substituteInPlace src/util/installation_scripting.py \
-      --replace "/etc/os-installer/scripts/" "${os-installer-snowflake-config}/etc/os-installer/scripts/"
+      --replace "/etc/os-installer/scripts/" "${os-installer-config}/etc/os-installer/scripts/"
   '';
 
   postInstall = ''
