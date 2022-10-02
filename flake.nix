@@ -20,16 +20,6 @@
         pkgs = import nixpkgs {
           inherit system;
         };
-        libadwaita-git = pkgs.libadwaita.overrideAttrs (oldAttrs: rec {
-          version = "1.2.0";
-          src = pkgs.fetchFromGitLab {
-            domain = "gitlab.gnome.org";
-            owner = "GNOME";
-            repo = "libadwaita";
-            rev = version;
-            hash = "sha256-3lH7Vi9M8k+GSrCpvruRpLrIpMoOakKbcJlaAc/FK+U=";
-          };
-        });
         vte-gtk4 = pkgs.callPackage ./vte-gtk4.nix {
           inherit (inputs) vte-src;
         };
@@ -43,7 +33,6 @@
         packages.${name} = pkgs.callPackage ./default.nix {
          inherit (inputs) os-installer-src;
          inherit vte-gtk4;
-         inherit libadwaita-git;
          os-installer-config = os-installer-snowflake-config-pkg;
         };
 
@@ -70,7 +59,7 @@
             gobject-introspection
             graphene
             gtk4
-            libadwaita-git
+            libadwaita
             meson
             ninja
             openssl

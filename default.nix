@@ -4,7 +4,6 @@
 , vte-gtk4
 , os-installer-src
 , os-installer-config ? null
-, libadwaita-git ? pkgs.libadwaita
 }:
 
 python3.pkgs.buildPythonApplication rec {
@@ -26,6 +25,7 @@ python3.pkgs.buildPythonApplication rec {
 
   buildInputs = with pkgs; [
     appstream
+    cryptsetup
     desktop-file-utils
     e2fsprogs
     epiphany
@@ -34,7 +34,7 @@ python3.pkgs.buildPythonApplication rec {
     gnome.gnome-control-center
     gnome.gnome-disk-utility
     gtk4
-    libadwaita-git
+    libadwaita
     libgweather
     libxml2
     udisks
@@ -70,6 +70,6 @@ python3.pkgs.buildPythonApplication rec {
   '';
 
   postInstall = ''
-    wrapProgram $out/bin/os-installer --prefix PATH : '${lib.makeBinPath [ pkgs.gptfdisk ]}'
+    wrapProgram $out/bin/os-installer --prefix PATH : '${lib.makeBinPath [ pkgs.gptfdisk pkgs.pciutils ]}'
   '';
 }
