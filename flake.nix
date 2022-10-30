@@ -2,10 +2,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     utils.url = "github:numtide/flake-utils";
-    vte-src = {
-      url = "git+https://gitlab.gnome.org/gnome/vte?ref=master";
-      flake = false;
-    };
     os-installer-src = {
       url = "git+https://gitlab.gnome.org/p3732/os-installer";
       flake = false;
@@ -14,14 +10,11 @@
     os-installer-snowflake-config.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, utils, vte-src, os-installer-src, os-installer-snowflake-config }@inputs:
+  outputs = { self, nixpkgs, utils, os-installer-src, os-installer-snowflake-config }@inputs:
     utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {
           inherit system;
-        };
-        vte-gtk4 = pkgs.callPackage ./vte-gtk4.nix {
-          inherit (inputs) vte-src;
         };
         os-installer-snowflake-config-pkg = pkgs.callPackage os-installer-snowflake-config {
           inherit (inputs);
@@ -32,7 +25,6 @@
       {
         packages.${name} = pkgs.callPackage ./default.nix {
          inherit (inputs) os-installer-src;
-         inherit vte-gtk4;
          os-installer-config = os-installer-snowflake-config-pkg;
         };
 

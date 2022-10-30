@@ -1,7 +1,6 @@
 { lib ? <nixpkgs/lib>
 , pkgs ? <nixpkgs>
 , python3 ? pkgs.python3
-, vte-gtk4
 , os-installer-src
 , os-installer-config ? null
 }:
