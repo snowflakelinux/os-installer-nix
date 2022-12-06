@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1667050928,
-        "narHash": "sha256-xOn0ZgjImIyeecEsrjxuvlW7IW5genTwvvnDQRFncB8=",
+        "lastModified": 1670242877,
+        "narHash": "sha256-jBLh7dRHnbfvPPA9znOC6oQfKrCPJ0El8Zoe0BqnCjQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "fdebb81f45a1ba2c4afca5fd9f526e1653ad0949",
+        "rev": "6e51c97f1c849efdfd4f3b78a4870e6aa2da4198",
         "type": "github"
       },
       "original": {
@@ -40,11 +40,11 @@
     "os-installer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1667006543,
-        "narHash": "sha256-4T1eHtFeyuIUSwgA9wA7mev5OnZ++8QsUbZX86mCZ3E=",
+        "lastModified": 1669189700,
+        "narHash": "sha256-RFgd05FwabFdPSVewQDKJPRylhOwZjSO5avOpbhQxT8=",
         "ref": "refs/heads/main",
-        "rev": "5e51b481df0f911e6f0011ca142eb470639e71c9",
-        "revCount": 700,
+        "rev": "158b87d93aff8a9c9da0657612fdc43bc8afe97f",
+        "revCount": 737,
         "type": "git",
         "url": "https://gitlab.gnome.org/p3732/os-installer"
       },
@@ -78,11 +78,11 @@
     },
     "utils_2": {
       "locked": {
-        "lastModified": 1667077288,
-        "narHash": "sha256-bdC8sFNDpT0HK74u9fUkpbf1MEzVYJ+ka7NXCdgBoaA=",
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "6ee9ebb6b1ee695d2cacc4faa053a7b9baa76817",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
         "type": "github"
       },
       "original": {
