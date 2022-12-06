@@ -24,11 +24,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1667097710,
-        "narHash": "sha256-BN1dnCz+0h/PBREml1Z7WBtta9ZciqPFhmdQhy8M5Lc=",
+        "lastModified": 1670361300,
+        "narHash": "sha256-ESEfdVm/IHT102F1YVY9xIqxA30y+ill1uRCnvW/pnQ=",
         "owner": "snowflakelinux",
         "repo": "os-installer-snowflake-config",
-        "rev": "3cac4e597a81eeda9f7a2392f22e60eec5e8a335",
+        "rev": "352ff10e6d2756cda4377e03a16c77fe3c265c61",
         "type": "github"
       },
       "original": {
@@ -63,11 +63,11 @@
     },
     "utils": {
       "locked": {
-        "lastModified": 1667077288,
-        "narHash": "sha256-bdC8sFNDpT0HK74u9fUkpbf1MEzVYJ+ka7NXCdgBoaA=",
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "6ee9ebb6b1ee695d2cacc4faa053a7b9baa76817",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
         "type": "github"
       },
       "original": {
