@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1670242877,
-        "narHash": "sha256-jBLh7dRHnbfvPPA9znOC6oQfKrCPJ0El8Zoe0BqnCjQ=",
+        "lastModified": 1670597555,
+        "narHash": "sha256-/k939P2S2246G6K5fyvC0U2IWvULhb4ZJg9K7ZxsX+k=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6e51c97f1c849efdfd4f3b78a4870e6aa2da4198",
+        "rev": "2dea0f4c2d6e4603f54b2c56c22367e77869490c",
         "type": "github"
       },
       "original": {
@@ -24,11 +24,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1670361300,
-        "narHash": "sha256-ESEfdVm/IHT102F1YVY9xIqxA30y+ill1uRCnvW/pnQ=",
+        "lastModified": 1670714457,
+        "narHash": "sha256-v8jBs3i1Nv0d45pb++J93l/Gq6c7pT0hqzKE0v85/Sg=",
         "owner": "snowflakelinux",
         "repo": "os-installer-snowflake-config",
-        "rev": "352ff10e6d2756cda4377e03a16c77fe3c265c61",
+        "rev": "cf2efc3b475fb3d76f7e9436682924af3f2d4407",
         "type": "github"
       },
       "original": {
